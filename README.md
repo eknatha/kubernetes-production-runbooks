@@ -34,6 +34,20 @@ kubectl describe pod <pod-name>
 
 kubectl logs <pod-name>
 
+kubectl get pod <pod-name> -o wide
+
+kubectl describe pod <pod-name> | grep -i limits -A5 
+
+kubectl get nodes 
+
+kubectl describe node <node-name> 
+
+kubectl get nodes -o wide 
+
+systemctl status kubelet 
+
+journalctl -u kubelet -f 
+
 ## Audience
 
 Platform Engineers  
